@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    cursor: none;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-6xl mx-auto px-8;
+  }
+  
+  .section-full {
+    @apply min-h-screen flex items-center justify-center;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-white to-light-gray bg-clip-text text-transparent;
+  }
+  
+  .gold-gradient {
+    @apply bg-gradient-to-r from-gold to-yellow-400 bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+  
+  .animation-delay-600 {
+    animation-delay: 600ms;
+  }
+  
+  .animation-delay-800 {
+    animation-delay: 800ms;
+  }
+  
+  .animation-delay-1000 {
+    animation-delay: 1000ms;
+  }
+  
+  .animation-delay-1200 {
+    animation-delay: 1200ms;
+  }
+  
+  .animation-delay-1500 {
+    animation-delay: 1500ms;
+  }
+  
+  .animation-delay-2000 {
+    animation-delay: 2000ms;
+  }
+  
+  .animation-delay-2500 {
+    animation-delay: 2500ms;
+  }
+}
+
