@@ -4,7 +4,6 @@ const nextConfig = {
     domains: ['localhost'],
     unoptimized: true,
   },
-  output: 'export',
   trailingSlash: true,
   skipTrailingSlashRedirect: true,
 }
