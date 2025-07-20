@@ -1,0 +1,7 @@
+{
+  "name": "Next.js",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
+  "postCreateCommand": "npm install",
+  "forwardPorts": [3000]
+}
+
