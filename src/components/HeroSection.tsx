@@ -23,7 +23,7 @@ export default function HeroSection() {
       >
         <div className="relative w-full h-[120%]">
           <Image
-            src="/images/dark world.jpg"
+            src="/images/dark_world.jpg"
             alt="Hero Background"
             fill
             className="object-cover opacity-60"
