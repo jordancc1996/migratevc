@@ -30,31 +30,44 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
+  e.preventDefault()
+  setIsSubmitting(true)
+  
+  try {
+    const response = await fetch('https://formcarry.com/s/DyBjyBVRU08', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    })
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000))
-    
-    // Here you would send the data to your backend/email service
-    console.log('Investor contact form submitted:', formData)
-    
+    if (response.ok) {
+      setIsSubmitting(false)
+      setIsSubmitted(true)
+      
+      // Reset and close after 3 seconds
+      setTimeout(() => {
+        setIsSubmitted(false)
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          investmentAmount: '',
+          message: ''
+        })
+        onClose()
+      }, 3000)
+    } else {
+      throw new Error('Form submission failed')
+    }
+  } catch (error) {
+    console.error('Error submitting form:', error)
     setIsSubmitting(false)
-    setIsSubmitted(true)
-    
-    // Reset and close after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false)
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        investmentAmount: '',
-        message: ''
-      })
-      onClose()
-    }, 3000)
+    alert('There was an error submitting the form. Please try again.')
   }
+}
 
   return (
     <AnimatePresence>
