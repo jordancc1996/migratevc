@@ -26,7 +26,7 @@ export default function HeroSection() {
             src="/images/dark_world.jpg"
             alt="Hero Background"
             fill
-            className="object-cover object-center opacity-60"
+            className="object-contain opacity-60"
             priority
           />
           <motion.div
