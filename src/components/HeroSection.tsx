@@ -21,7 +21,7 @@ export default function HeroSection() {
         className="absolute inset-0 z-0"
         style={{ y }}
       >
-        <div className="relative w-full h-[120%]">
+        <div className="relative w-full h-full">
           <Image
             src="/images/dark_world.jpg"
             alt="Hero Background"
