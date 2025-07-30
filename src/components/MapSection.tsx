@@ -5,8 +5,9 @@ import { useRef, useState } from 'react'
 import Image from 'next/image'
 
 const countries = [
-  'Singapore',
-  'Switzerland', 
+  'Greece',
+  'New Zealand',
+  'Carribean Islands',
   'Dubai',
   'Portugal',
   'Malta',
