@@ -23,7 +23,7 @@ export default function CTASection() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/luxury_gold_bg.jpg"
+          src="/images/st_moritz.jpg"
           alt="Luxury Background"
           fill
           className="object-cover"
