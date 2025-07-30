@@ -3,20 +3,17 @@
 import { motion, useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
 import Image from 'next/image'
+import ContactModal from './ContactModal'  // Add this import
 
 export default function CTASection() {
   const ref = useRef<HTMLElement>(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
   const [isHovered, setIsHovered] = useState(false)
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   const handleAccessRequest = () => {
-    // Create ripple effect
-    const ripple = document.createElement('div')
-    ripple.className = 'absolute inset-0 bg-gold/20 rounded-full animate-ping'
-    
-    // In a real implementation, this would open a contact form or redirect
-    alert('Access request functionality would be implemented here.')
-  }
+   setIsModalOpen(true)
+}
 
   return (
     <section id="access" ref={ref} className="relative h-screen flex items-center justify-center overflow-hidden">
@@ -131,6 +128,11 @@ export default function CTASection() {
           />
         ))}
       </div>
+      {/* Contact Modal */}
+      <ContactModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+      />
     </section>
   )
 }
