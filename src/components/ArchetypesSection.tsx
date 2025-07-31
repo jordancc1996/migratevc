@@ -7,37 +7,32 @@ import Image from 'next/image'
 const archetypes = [
   {
     title: 'Early Crypto Adopter',
-    image: '/images/portrait_2.jpg',
+    image: '/images/crypto_adopter.jpg',
     description: 'Early adopter with significant digital asset holdings. Requires sophisticated tax optimization and global mobility solutions.',
   },
   {
     title: 'Family Office Principals / Managing Directors',
-    image: '/images/portrait_1.jpg',
+    image: '/images/family_office.jpg',
     description: 'Manages institutional capital across borders. Needs strategic residency for fund operations and personal wealth management.',
   },
   {
-    title: 'The Southeast Asia Family Office',
-    image: '/images/portrait_3.jpg',
-    description: 'Multi-generational wealth preservation. Requires comprehensive global citizenship strategy for family security and growth.',
-  },
-  {
     title: 'Solo Founders & Investors',
-    image: '/images/portrait_4.jpg',
+    image: '/images/solo_founder.jpg',
     description: 'Independent entrepreneurs and angel investors building wealth through calculated risks. Seeks jurisdictional flexibility for personal and investment optimization.',
   },
   {
     title: 'Private Equity Professionals',
-    image: '/images/portrait_5.jpg',
+    image: '/images/private_equity.jpg',
     description: 'Deal makers managing billions in leveraged buyouts and growth capital. Requires sophisticated structures for carried interest and international deal flow.',
   },
   {
     title: 'Consultants & Advisors',
-    image: '/images/portrait_6.jpg',
+    image: '/images/consultant.jpg',
     description: 'High-value knowledge workers serving global clientele. Needs location independence and tax-efficient structures for consulting income.',
   },
   {
     title: 'C-Suite Executives',
-    image: '/images/portrait_7.jpg',
+    image: '/images/c_suite.jpg',
     description: 'Corporate leaders with substantial equity compensation and international responsibilities. Seeks strategic residency for executive mobility and wealth preservation.',
   },
 ]
