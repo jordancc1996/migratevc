@@ -6,12 +6,12 @@ import Image from 'next/image'
 
 const archetypes = [
   {
-    title: 'The Crypto OG',
+    title: 'Early Crypto Adopter',
     image: '/images/portrait_2.jpg',
     description: 'Early adopter with significant digital asset holdings. Requires sophisticated tax optimization and global mobility solutions.',
   },
   {
-    title: 'The Fund General Partner',
+    title: 'Family Office Principals / Managing Directors',
     image: '/images/portrait_1.jpg',
     description: 'Manages institutional capital across borders. Needs strategic residency for fund operations and personal wealth management.',
   },
@@ -19,6 +19,26 @@ const archetypes = [
     title: 'The Southeast Asia Family Office',
     image: '/images/portrait_3.jpg',
     description: 'Multi-generational wealth preservation. Requires comprehensive global citizenship strategy for family security and growth.',
+  },
+  {
+    title: 'Solo Founders & Investors',
+    image: '/images/portrait_4.jpg',
+    description: 'Independent entrepreneurs and angel investors building wealth through calculated risks. Seeks jurisdictional flexibility for personal and investment optimization.',
+  },
+  {
+    title: 'Private Equity Professionals',
+    image: '/images/portrait_5.jpg',
+    description: 'Deal makers managing billions in leveraged buyouts and growth capital. Requires sophisticated structures for carried interest and international deal flow.',
+  },
+  {
+    title: 'Consultants & Advisors',
+    image: '/images/portrait_6.jpg',
+    description: 'High-value knowledge workers serving global clientele. Needs location independence and tax-efficient structures for consulting income.',
+  },
+  {
+    title: 'C-Suite Executives',
+    image: '/images/portrait_7.jpg',
+    description: 'Corporate leaders with substantial equity compensation and international responsibilities. Seeks strategic residency for executive mobility and wealth preservation.',
   },
 ]
 
