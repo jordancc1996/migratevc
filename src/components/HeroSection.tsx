@@ -83,7 +83,7 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.2 }}
         >
-          Strategic intelligence meets global mobility
+          Unlock Capital , Expand Network, Increase Deal Flow - Built For The Modern Businessman
         </motion.p>
       </motion.div>
 
