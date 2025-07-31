@@ -83,7 +83,7 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.2 }}
         >
-          Unlock Capital - Expand Network - Increase Deal Flow - Built For The Modern Entrepreneur
+          Unlock Capital - Expand Network - Increase Deal Flow & Funding
         </motion.p>
       </motion.div>
 
